@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:local="clr-namespace:MauiApp1">
+
+    <Grid RowDefinitions=".5*,*" Padding="0" BackgroundColor="White">
+        
+        <!--<Image Source="pan.jpg" Aspect="AspectFill" Grid.RowSpan="2"/>-->
+        <Frame Padding="0" VerticalOptions="Center"   BackgroundColor="Transparent" BorderColor="Transparent">
+            <Image Source="logo.png" Aspect="AspectFill"/>
+           
+        </Frame>
+        <Border Grid.Row="2"  Stroke="Transparent" BackgroundColor="Transparent" StrokeShape="RoundRectangle 0 100 0 0" Padding="15">
+            
+            <VerticalStackLayout Spacing="15" Padding="15">
+               
+                <Label Text="Login" TextColor="Black" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                
+                <StackLayout Spacing="5">
+                    <Label Text="Email" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                    <Frame Padding="10,5" BorderColor="Grey"  HasShadow="True" BackgroundColor="White">
+                        <Frame.Shadow>
+                            <Shadow Brush="Black"
+                                    Offset="2, 02"
+                                    Opacity="0.3"/>
+                            
+                        </Frame.Shadow>
+                        <local:BorderlessEntry PlaceholderColor="Olive" TextColor="Black" FontSize="20"/>
+                        <!--<Entry TextColor="Black" FontSize="17" FontAttributes="Bold" ></Entry>-->
+                    </Frame>
+                </StackLayout>
+                <StackLayout Spacing="5">
+                    <Label Text="Password" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                    <Frame BackgroundColor="White" Padding="10,5" BorderColor="Grey" HasShadow="True">
+                        <Frame.Shadow>
+                            <Shadow Brush="Black"
+            Offset="2, 02"
+            Opacity="0.3"/>
+
+                        </Frame.Shadow>
+                        <local:BorderlessEntry PlaceholderColor="Olive" TextColor="Black" FontSize="20" IsPassword="True"/>
+                    </Frame>
+                </StackLayout>
+                <Button Text="Create an account" TextColor="Black" FontAttributes="Bold" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" FontSize="15" Clicked="Button_Clicked_1"/>
+                <!--#B76E2D-->
+                <Button Text="Sign in" BackgroundColor="#1b1b1b" WidthRequest="200" FontSize="16" FontAttributes="Bold" TextColor="White" Clicked="Button_Clicked"  />
+
+
+
+
+            </VerticalStackLayout>
+
+
+        </Border>
+
+        <!--<Grid RowDefinitions="*,*,*" BackgroundColor="Green">
+         <Image Source="logo.png" HeightRequest="450" VerticalOptions="Center" HorizontalOptions="Center"/>
+           <Grid Grid.Row="1" Padding="15">
+           <VerticalStackLayout Spacing="12">
+               
+               <Frame HeightRequest="55" CornerRadius="25" Padding="0" BackgroundColor="Gray">
+                   <Entry Placeholder="E Mail / username"/>
+               </Frame>
+               
+               <Frame HeightRequest="55" CornerRadius="25" Padding="0" BackgroundColor="Gray"></Frame>
+               <Frame HeightRequest="55" CornerRadius="25" Padding="0" BackgroundColor="Red"></Frame>
+               <Label Text="Kaunda"/>
+
+           </VerticalStackLayout>
+           </Grid>
+       
+       </Grid>-->
+
+        <!--<Grid Grid.Row="1" BackgroundColor="Green">
+           <Label Text="KAunda" FontSize="20"/>
+       </Grid>
+       
+       <Grid Grid.Row="2" BackgroundColor="Gray">
+           <Label Text="KAunda" FontSize="20"/>
+       </Grid>-->
+    </Grid>
+
+</ContentPage>

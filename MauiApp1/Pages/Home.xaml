@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Pages.Home"
+             Title=""
+             NavigationPage.HasNavigationBar="False">
+    <Grid RowDefinitions="auto,.4*,*,.3*">
+        <Frame BackgroundColor="Red" CornerRadius="0">
+            <Grid ColumnDefinitions="*,*">
+                
+            </Grid>
+        </Frame>
+        
+        <Grid Grid.Row="1" Padding="10">
+            <Frame Padding="0">
+                <Image Source="pangolin.jpg" Aspect="AspectFill"/>
+            </Frame>
+            
+        </Grid>
+        <Grid Grid.Row="2" ColumnDefinitions="*,*" RowDefinitions="*,*" RowSpacing="15" ColumnSpacing="15"  Padding="15">
+
+            <Grid  Grid.Row="0" Grid.Column="0">
+                <Frame HasShadow="True" BorderColor="Transparent">
+                    <Frame.Shadow>
+                        <Shadow Brush="Black"
+                                 Offset="2, 02"
+                                 Opacity="0.5"/>
+                    </Frame.Shadow>
+
+                    <StackLayout>
+                        <Image Source="dotnet_bot.png"/>
+                        <Label Text="tracking" FontSize="17" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+            
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Frame HasShadow="True" BorderColor="Transparent">
+                    <Frame.Shadow>
+                        <Shadow Brush="Black"
+             Offset="2, 02"
+             Opacity="0.5"/>
+                    </Frame.Shadow>
+                    <StackLayout>
+                        <Image Source="dotnet_bot.png"/>
+                        <Label Text="tracking" FontSize="17" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+            <Grid  Grid.Row="1" Grid.Column="0">
+                <Frame HasShadow="True" BorderColor="Transparent">
+                    <Frame.Shadow>
+                        <Shadow Brush="Black"
+             Offset="2, 02"
+             Opacity="0.5"/>
+                    </Frame.Shadow>
+                    <StackLayout>
+                        <Image Source="dotnet_bot.png"/>
+                        <Label Text="tracking" FontSize="17" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+            <Grid  Grid.Row="1" Grid.Column="1">
+                
+                <Frame HasShadow="True" BorderColor="Transparent">
+                    <Frame.Shadow>
+                        <Shadow Brush="Black"
+             Offset="2, 02"
+             Opacity="0.5"/>
+                    </Frame.Shadow>
+                    <StackLayout>
+                        <Image Source="dotnet_bot.png"/>
+                        <Label Text="tracking" FontSize="17" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+                    </StackLayout>
+                    
+                </Frame>
+            </Grid>
+
+
+
+
+        </Grid>
+        
+    </Grid>
+</ContentPage>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Pages.SignupPage"
+             Title="SignupPage"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:local="clr-namespace:MauiApp1">
+    
+    <ScrollView BackgroundColor="Black">
+            <Grid RowDefinitions=".2*,*">
+            <Image Source="log.jpng" Aspect="AspectFill"/>
+
+            <Border Grid.Row="1" BackgroundColor="White"
+                    Stroke="Transparent"
+                        StrokeShape="RoundRectangle 102 2 1 2" Padding="10">
+
+                
+                <Grid RowDefinitions=".1*,*" Padding="5">
+                    <!--<Image Source="pangolin.jpg" Aspect="AspectFill" Opacity="0.3"/>-->
+                    <Label Text="Sign Up" TextColor="Black" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold"/>
+
+                    <VerticalStackLayout Grid.Row="1" Spacing="15">
+                        <StackLayout Padding="12">
+                            <Label Text="FirstName" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                            <Frame BackgroundColor="White" Padding="10,02" HasShadow="True" BorderColor="Grey">
+                                <Frame.Shadow>
+                                    <Shadow Brush="Black"
+            Offset="2, 02"
+            Opacity="0.3"/>
+
+                                </Frame.Shadow>
+                                <local:BorderlessEntry  TextColor="Black" FontSize="17"/>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Padding="12">
+                            <Label Text="Last Name" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                            <Frame BackgroundColor="White" Padding="10,02" HasShadow="True" BorderColor="Grey">
+                                <Frame.Shadow>
+                                    <Shadow Brush="Black"
+Offset="2, 02"
+Opacity="0.3"/>
+
+                                </Frame.Shadow>
+                                <local:BorderlessEntry  TextColor="Black" FontSize="17"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Padding="12">
+                            <Label Text="Email" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                            <Frame BackgroundColor="White" Padding="10,02" HasShadow="True" BorderColor="Grey">
+                                <Frame.Shadow>
+                                    <Shadow Brush="Black"
+Offset="2, 02"
+Opacity="0.3"/>
+
+                                </Frame.Shadow>
+                                <local:BorderlessEntry  TextColor="Black" FontSize="17"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Padding="12">
+                            <Label Text="Password" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                            <Frame BackgroundColor="White" Padding="10,02" HasShadow="True" BorderColor="Grey">
+                                <Frame.Shadow>
+                                    <Shadow Brush="Black"
+Offset="2, 02"
+Opacity="0.3"/>
+
+                                </Frame.Shadow>
+                                <local:BorderlessEntry  TextColor="Black" FontSize="17"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Padding="12">
+                            <Label Text="Confirm Password" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                            <Frame BackgroundColor="White" Padding="10,02" HasShadow="True" BorderColor="Grey" >
+                                <Frame.Shadow>
+                                    <Shadow Brush="Black"
+Offset="2, 02"
+Opacity="0.3"/>
+
+                                </Frame.Shadow>
+                                <local:BorderlessEntry  TextColor="Black" FontSize="17"/>
+                            </Frame>
+                        </StackLayout>
+
+                        <Button Text="Register" BackgroundColor="#1b1b1b" TextColor="White" FontSize="17"/>
+
+
+
+                    </VerticalStackLayout>
+                </Grid>
+
+
+            </Border>
+            </Grid>
+    </ScrollView>
+    
+</ContentPage>
